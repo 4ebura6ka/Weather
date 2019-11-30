@@ -1,0 +1,90 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+    <Compile Remove="Migrations\20191128115550_CreateIdentitySchema.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Weather.Core\Weather.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Pages\_ViewImports.cshtml" />
+    <None Remove="Pages\Shared\_Layout.cshtml" />
+    <None Remove="Pages\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Remove="Pages\Shared\_LoginPartial.cshtml" />
+    <None Remove="wwwroot\css\site.css" />
+    <None Remove="wwwroot\lib\bootstrap\LICENSE" />
+    <None Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <None Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <None Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Remove="wwwroot\lib\jquery\LICENSE.txt" />
+    <None Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <None Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
+    <None Remove="wwwroot\lib\jquery\dist\jquery.js" />
+    <None Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Remove="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Remove="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Remove="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Remove="ScaffoldingReadme.txt" />
+    <None Remove="appsettings.json" />
+    <None Remove="Areas\Identity\Pages\Error.cshtml" />
+    <None Remove="Areas\Identity\Pages\_ViewStart.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Register.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\ForgotPassword.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\_ViewImports.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\ResetPassword.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\ConfirmEmail.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Logout.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Lockout.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\ExternalLogin.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\_StatusMessage.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\RegisterConfirmation.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Login.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\LoginWith2fa.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\AccessDenied.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\ShowRecoveryCodes.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\_Layout.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\ExternalLogins.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\PersonalData.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\DeletePersonalData.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\SetPassword.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\ResetAuthenticator.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\Email.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\Disable2fa.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\_StatusMessage.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\Index.cshtml" />
+    <None Remove="Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml" />
+  </ItemGroup>
+</Project>

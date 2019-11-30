@@ -1,0 +1,38 @@
+﻿@page "{cityId:int?}"
+@model EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit @Model.City.Name</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="City.Id"/>
+    <div class="form-group">
+        <label asp-for="City.Name" />
+        <input asp-for="City.Name" class="form-control"/>
+        <span class="text-danger" asp-validation-for="City.Name"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="City.Country" />
+        <input asp-for="City.Country" class="form-control"/>
+        <span class="text-danger" asp-validation-for="City.Country"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="City.CityType" />
+        <select class="form-control" asp-for="City.CityType"
+                asp-items="Model.CityType">
+        </select>
+        <span class="text-danger" asp-validation-for="City.CityType"></span>
+    </div>
+      <div class="form-group">
+        <label asp-for="City.Temperature" />
+        <input asp-for="City.Temperature" class="form-control"/>
+        <span class="text-danger" asp-validation-for="City.Temperature"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

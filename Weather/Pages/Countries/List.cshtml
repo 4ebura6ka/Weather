@@ -1,0 +1,44 @@
+﻿@page
+@model ListModel
+@{
+}
+
+<h1>Cities</h1>
+
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control"
+                   asp-for="SearchTerm" />
+            <span class="input-group-btn">
+                <button class="btn btn-primary">
+                    <i class="fas fa-search"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+
+<table class="table">
+    @foreach (var city in Model.Cities)
+    {
+        <tr>
+            <td>@city.Name</td>
+            <td>@city.Country</td>
+            <td>@city.CityType</td>
+            <td>@city.Temperature</td>
+            <td>
+                <a class="btn btn-lg" asp-page="./Detail"
+                   asp-route-cityId="@city.Id">
+                    <i class="fas fa-search"></i>
+                </a>
+                 <a class="btn btn-lg" asp-page="./Edit"
+                   asp-route-cityId="@city.Id">
+                    <i class="fas fa-edit"></i>
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a asp-page="./Edit" class="btn btn-primary"> New </a>

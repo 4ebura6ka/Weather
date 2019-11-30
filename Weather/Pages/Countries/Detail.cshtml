@@ -1,0 +1,29 @@
+﻿@page "{cityId:int}"
+
+@model DetailModel
+@{
+    ViewData["Title"] = "Detail"; 
+}
+
+@if(Model.Message != null)
+{
+    <div class="alert alert-info">@Model.Message</div>
+}
+
+<h2>@Model.City.Name</h2>
+<div>
+    Id: @Model.City.Id
+</div>
+<div>
+    Location: @Model.City.Country
+</div>
+
+<div>
+    Name: @Model.City.CityType
+</div>
+
+<div>
+    Temperature: @Model.City.Temperature
+</div>
+
+<a asp-page="./List" class="btn btn-primary"> All cities</a>
